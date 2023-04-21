@@ -1,4 +1,8 @@
 package danylo.bank.app.customers.interfaces;
 
-public interface SilverCustomerInterface {
+/**
+ * This interface responsible for keeping silver customer methods.
+ * Extends bronze customer functional.
+ */
+public interface SilverCustomerInterface extends BronzeCustomerInterface{
 }

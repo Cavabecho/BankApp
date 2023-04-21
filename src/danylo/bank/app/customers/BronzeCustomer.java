@@ -1,9 +1,13 @@
 package danylo.bank.app.customers;
 
+import danylo.bank.app.customers.interfaces.BronzeCustomerInterface;
+
 /**
  * Is subclass for Customer abstract class.
- * This class keeps methods, that going to make money requests to the junior banker class.
+ * Implements BronzeCustomerInterface interface.
+ * This class keeps implementation of methods,
+ * that going to make money requests to the junior banker class.
  * Customers of this class can only top up balance and withdraw money.
  */
-public class BronzeCustomer extends Customer{
+public class BronzeCustomer extends Customer implements BronzeCustomerInterface {
 }
