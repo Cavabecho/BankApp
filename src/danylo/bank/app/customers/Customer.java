@@ -10,5 +10,5 @@ package danylo.bank.app.customers;
  * - Take credit
  * - Invest to the Danilo Bank.
  */
-public class Customer {
+public abstract class Customer {
 }

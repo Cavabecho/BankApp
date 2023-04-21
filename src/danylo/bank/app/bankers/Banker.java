@@ -6,5 +6,5 @@ package danylo.bank.app.bankers;
  * Also, this class is superclass for all bankers.
  * The subclasses of this class are handlers for customers requests.
  */
-public class Banker {
+public abstract class Banker {
 }
