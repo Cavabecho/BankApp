@@ -1,8 +1,12 @@
 package danylo.bank.app.bankers;
 
+import danylo.bank.app.bankers.interfaces.SeniorBankerInterface;
+
 /**
  * Is subclass for Banker abstract class.
- * This class keeps methods, that going to handle gold customer requests.
+ * Implements SeniorBankerInterface interface.
+ * This class keeps implementation of the senior banker methods,
+ * that going to handle gold customer requests.
  */
-public class SeniorBanker extends Banker{
+public class SeniorBanker extends Banker implements SeniorBankerInterface {
 }
