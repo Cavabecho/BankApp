@@ -9,4 +9,15 @@ import danylo.bank.app.bankers.interfaces.JuniorBankerInterface;
  * that going to handle bronze customer requests.
  */
 public class JuniorBanker extends Banker implements JuniorBankerInterface {
+    /**
+     * Constructor for JuniorBanker class.
+     * Initializes the JuniorBanker object with the given bankerName, bankerPosition, and bankerID.
+     *
+     * @param bankerName     String representing the name of the banker
+     * @param bankerPosition String representing the position of the banker
+     * @param bankerID       Integer representing the ID of the banker
+     */
+    public JuniorBanker(String bankerName, String bankerPosition, Integer bankerID) {
+        super(bankerName, bankerPosition, bankerID);
+    }
 }

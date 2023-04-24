@@ -2,6 +2,8 @@ package danylo.bank.app.customers;
 
 import danylo.bank.app.customers.interfaces.GoldCustomerInterface;
 
+import java.math.BigDecimal;
+
 /**
  * Is subclass for the Customer abstract class.
  * Implements GoldCustomerInterface interface.
@@ -12,4 +14,15 @@ import danylo.bank.app.customers.interfaces.GoldCustomerInterface;
  * for an amount that is equal to 1/4 of all bank's money.
  */
 public class GoldCustomer extends Customer implements GoldCustomerInterface {
+    /**
+     * Constructor for GoldCustomer class.
+     * Initializes the GoldCustomer object with the given customerName, customerID, salaryPerMonth.
+     *
+     * @param customerName   String representing the name of the customer
+     * @param customerID     Integer representing the ID of the customer
+     * @param salaryPerMonth BigDecimal representing the salary per month of the customer
+     */
+    public GoldCustomer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
+        super(customerName, customerID, salaryPerMonth);
+    }
 }
