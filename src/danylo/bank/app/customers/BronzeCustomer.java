@@ -25,12 +25,12 @@ public class BronzeCustomer extends Customer implements BronzeCustomerInterface 
     }
 
     @Override
-    public void topUpBalance() {
+    public void topUpBalance(BigDecimal amount) {
 
     }
 
     @Override
-    public void withdrawMoney() {
+    public void withdrawMoney(BigDecimal amount) {
 
     }
 }

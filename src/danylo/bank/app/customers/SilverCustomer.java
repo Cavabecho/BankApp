@@ -26,17 +26,17 @@ public class SilverCustomer extends Customer implements SilverCustomerInterface 
     }
 
     @Override
-    public void topUpBalance() {
+    public void topUpBalance(BigDecimal amount) {
 
     }
 
     @Override
-    public void withdrawMoney() {
+    public void withdrawMoney(BigDecimal amount) {
 
     }
 
     @Override
-    public void takeCredit() {
+    public void takeCredit(BigDecimal amount) {
 
     }
 }

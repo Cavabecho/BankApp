@@ -27,22 +27,22 @@ public class GoldCustomer extends Customer implements GoldCustomerInterface {
     }
 
     @Override
-    public void topUpBalance() {
+    public void topUpBalance(BigDecimal amount) {
 
     }
 
     @Override
-    public void withdrawMoney() {
+    public void withdrawMoney(BigDecimal amount) {
 
     }
 
     @Override
-    public void investMoney() {
+    public void investMoney(BigDecimal amount) {
 
     }
 
     @Override
-    public void takeCredit() {
+    public void takeCredit(BigDecimal amount) {
 
     }
 }

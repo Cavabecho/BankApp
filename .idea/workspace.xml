@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/JuniorBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/JuniorBankerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/MiddleBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/MiddleBankerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/BronzeCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/BronzeCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/SilverCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/SilverCustomer.java" afterDir="false" />

@@ -5,5 +5,8 @@ package danylo.bank.app.bankers.interfaces;
  * Extends junior banker functional.
  */
 public interface MiddleBankerInterface extends JuniorBankerInterface{
+    /**
+     * Handler for the takeCredit method.
+     */
     void handleTakeCredit();
 }
