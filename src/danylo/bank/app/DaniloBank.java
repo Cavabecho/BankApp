@@ -33,12 +33,39 @@ public class DaniloBank {
     }
 
     /**
+     * Increases the value of totalBankAccount by the value of amount.
+     *
+     * @param amount The value by which totalBankAccount will be increased
+     */
+    public static void increaseTotalBankAccount(Double amount) {
+        DaniloBank.totalBankAccount += amount;
+    }
+
+    /**
+     * Reduces the value of totalBankAccount by the value of amount.
+     *
+     * @param amount The value by which totalBankAccount will be reduced
+     */
+    public static void reduceTotalBankAccount(Double amount) {
+        DaniloBank.totalBankAccount -= amount;
+    }
+
+    /**
      * Returns the value of totalCustomersCredit.
      *
      * @return The value of totalCustomersCredit
      */
     public static Double getTotalCustomersCredit() {
         return totalCustomersCredit;
+    }
+
+    /**
+     * Increases the value of totalCustomersCredit by the value of amount.
+     *
+     * @param amount The value by which totalCustomersCredit will be increased
+     */
+    public static void increaseTotalCustomersCredit(Double amount) {
+        DaniloBank.totalCustomersCredit += amount;
     }
 
     /**
