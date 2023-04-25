@@ -5,4 +5,5 @@ package danylo.bank.app.customers.interfaces;
  * Extends bronze customer functional.
  */
 public interface SilverCustomerInterface extends BronzeCustomerInterface{
+    void takeCredit();
 }

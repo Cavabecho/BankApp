@@ -5,4 +5,5 @@ package danylo.bank.app.bankers.interfaces;
  * Extends middle banker functional.
  */
 public interface SeniorBankerInterface extends MiddleBankerInterface{
+    void handleInvestMoney();
 }

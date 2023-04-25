@@ -24,4 +24,19 @@ public class SilverCustomer extends Customer implements SilverCustomerInterface 
     public SilverCustomer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
         super(customerName, customerID, salaryPerMonth);
     }
+
+    @Override
+    public void topUpBalance() {
+
+    }
+
+    @Override
+    public void withdrawMoney() {
+
+    }
+
+    @Override
+    public void takeCredit() {
+
+    }
 }

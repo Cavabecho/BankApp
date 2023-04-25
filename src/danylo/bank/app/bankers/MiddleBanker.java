@@ -20,4 +20,19 @@ public class MiddleBanker extends Banker implements MiddleBankerInterface {
     public MiddleBanker(String bankerName, String bankerPosition, Integer bankerID) {
         super(bankerName, bankerPosition, bankerID);
     }
+
+    @Override
+    public void handleTopUpBalance() {
+
+    }
+
+    @Override
+    public void handleWithdrawMoney() {
+
+    }
+
+    @Override
+    public void handleTakeCredit() {
+
+    }
 }

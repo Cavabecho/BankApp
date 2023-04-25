@@ -5,4 +5,5 @@ package danylo.bank.app.customers.interfaces;
  * Extends silver customer functional.
  */
 public interface GoldCustomerInterface extends SilverCustomerInterface{
+    void investMoney();
 }
