@@ -20,4 +20,24 @@ public class SeniorBanker extends Banker implements SeniorBankerInterface {
     public SeniorBanker(String bankerName, String bankerPosition, Integer bankerID) {
         super(bankerName, bankerPosition, bankerID);
     }
+
+    @Override
+    public void handleTopUpBalance() {
+
+    }
+
+    @Override
+    public void handleWithdrawMoney() {
+
+    }
+
+    @Override
+    public void handleTakeCredit() {
+
+    }
+
+    @Override
+    public void handleInvestMoney() {
+
+    }
 }

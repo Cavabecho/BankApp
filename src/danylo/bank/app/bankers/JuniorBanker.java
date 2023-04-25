@@ -20,4 +20,14 @@ public class JuniorBanker extends Banker implements JuniorBankerInterface {
     public JuniorBanker(String bankerName, String bankerPosition, Integer bankerID) {
         super(bankerName, bankerPosition, bankerID);
     }
+
+    @Override
+    public void handleTopUpBalance() {
+
+    }
+
+    @Override
+    public void handleWithdrawMoney() {
+
+    }
 }

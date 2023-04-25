@@ -25,4 +25,24 @@ public class GoldCustomer extends Customer implements GoldCustomerInterface {
     public GoldCustomer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
         super(customerName, customerID, salaryPerMonth);
     }
+
+    @Override
+    public void topUpBalance(BigDecimal amount) {
+
+    }
+
+    @Override
+    public void withdrawMoney(BigDecimal amount) {
+
+    }
+
+    @Override
+    public void investMoney(BigDecimal amount) {
+
+    }
+
+    @Override
+    public void takeCredit(BigDecimal amount) {
+
+    }
 }

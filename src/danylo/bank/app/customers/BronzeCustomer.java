@@ -23,4 +23,14 @@ public class BronzeCustomer extends Customer implements BronzeCustomerInterface 
     public BronzeCustomer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
         super(customerName, customerID, salaryPerMonth);
     }
+
+    @Override
+    public void topUpBalance(BigDecimal amount) {
+
+    }
+
+    @Override
+    public void withdrawMoney(BigDecimal amount) {
+
+    }
 }
