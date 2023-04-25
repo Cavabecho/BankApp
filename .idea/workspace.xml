@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/JuniorBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/JuniorBankerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/MiddleBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/MiddleBankerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/DaniloBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/DaniloBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/BronzeCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/BronzeCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/SilverCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/SilverCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/interfaces/BronzeCustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/interfaces/BronzeCustomerInterface.java" afterDir="false" />
@@ -40,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;addInterfaceMethods&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/Java/BankApp/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "basicMethods",
+    "onboarding.tips.debug.path": "C:/Code/Java/BankApp/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
