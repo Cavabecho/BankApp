@@ -15,8 +15,8 @@ public abstract class Customer {
     private final String CUSTOMER_NAME;
     private final String CUSTOMER_PRIORITY;
     private final Integer CUSTOMER_ID;
+    private final Double salaryPerMonth;
     private Double balance;
-    private Double salaryPerMonth;
 
     /**
      * Constructor for Customer abstract class.
@@ -77,6 +77,24 @@ public abstract class Customer {
      */
     public Double getBalance() {
         return balance;
+    }
+
+    /**
+     * Increases the value of balance by the value of amount.
+     *
+     * @param amount The value by which balance will be increased
+     */
+    public void increaseBalance(Double amount) {
+        this.balance += amount;
+    }
+
+    /**
+     * Reduces the value of balance by the value of amount.
+     *
+     * @param amount The value by which balance will be reduced
+     */
+    public void reduceBalance(Double amount) {
+        this.balance -= amount;
     }
 
     /**
