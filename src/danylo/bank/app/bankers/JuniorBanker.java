@@ -1,6 +1,8 @@
 package danylo.bank.app.bankers;
 
+import danylo.bank.app.DaniloBank;
 import danylo.bank.app.bankers.interfaces.JuniorBankerInterface;
+import danylo.bank.app.customers.BronzeCustomer;
 
 /**
  * Is subclass for Banker abstract class.
@@ -22,8 +24,19 @@ public class JuniorBanker extends Banker implements JuniorBankerInterface {
     }
 
     @Override
-    public void handleTopUpBalance() {
+    public void handleTopUpBalance(Double amount, BronzeCustomer bronzeCustomer) {
+        if (amount < 0) {
+            System.out.println("Provided incorrect amount");
+            return;
+        }
 
+        double newBalance = bronzeCustomer.getBalance() + amount;
+        if (newBalance > 0) {
+            DaniloBank.increaseTotalBankAccount(amount);
+            bronzeCustomer.increaseBalance(amount);
+        } else {
+            System.out.println("Provided incorrect amount");
+        }
     }
 
     @Override

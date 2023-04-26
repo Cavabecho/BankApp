@@ -1,5 +1,7 @@
 package danylo.bank.app.customers;
 
+import danylo.bank.app.bankers.Banker;
+import danylo.bank.app.bankers.JuniorBanker;
 import danylo.bank.app.customers.interfaces.BronzeCustomerInterface;
 
 
@@ -24,8 +26,8 @@ public class BronzeCustomer extends Customer implements BronzeCustomerInterface 
     }
 
     @Override
-    public void topUpBalance(Double amount) {
-
+    public void topUpBalance(Double amount, JuniorBanker juniorBanker) {
+        juniorBanker.handleTopUpBalance(amount, this);
     }
 
     @Override
