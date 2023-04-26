@@ -69,6 +69,15 @@ public class DaniloBank {
     }
 
     /**
+     * Reduces the value of totalCustomersCredit by the value of amount.
+     *
+     * @param amount The value by which totalCustomersCredit will be reduced
+     */
+    public static void reduceTotalCustomersCredit(Double amount) {
+        DaniloBank.totalCustomersCredit -= amount;
+    }
+
+    /**
      * Returns the value of bankers.
      *
      * @return The value of bankers
