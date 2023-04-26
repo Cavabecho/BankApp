@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 /**
  * This class is responsible for keeping all data and behavior,
- * which are specific to the all bankers, the list of customers.
- * Also, this class is superclass for all bankers.
- * The subclasses of this class are handlers for customers requests.
+ * that are specific to the all bankers, the list of customers.
+ * Also, this class is superclass for the all bankers.
+ * The subclasses of this class are handlers for the customer requests.
  */
 public abstract class Banker {
     private final String BANKER_NAME;
