@@ -9,4 +9,9 @@ public interface MiddleBankerInterface extends JuniorBankerInterface{
      * Handler for the takeCredit method.
      */
     void handleTakeCredit();
+
+    /**
+     * Handler for the payCredit method
+     */
+    void handlePayCredit();
 }

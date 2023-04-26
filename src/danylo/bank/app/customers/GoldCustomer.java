@@ -44,4 +44,9 @@ public class GoldCustomer extends Customer implements GoldCustomerInterface {
     public void takeCredit(Double amount) {
 
     }
+
+    @Override
+    public void payCredit(Double amount) {
+
+    }
 }

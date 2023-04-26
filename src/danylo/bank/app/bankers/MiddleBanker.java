@@ -35,4 +35,9 @@ public class MiddleBanker extends Banker implements MiddleBankerInterface {
     public void handleTakeCredit() {
 
     }
+
+    @Override
+    public void handlePayCredit() {
+
+    }
 }

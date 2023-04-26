@@ -38,4 +38,9 @@ public class SilverCustomer extends Customer implements SilverCustomerInterface 
     public void takeCredit(Double amount) {
 
     }
+
+    @Override
+    public void payCredit(Double amount) {
+
+    }
 }
