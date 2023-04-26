@@ -37,6 +37,11 @@ public class SeniorBanker extends Banker implements SeniorBankerInterface {
     }
 
     @Override
+    public void handlePayCredit() {
+
+    }
+
+    @Override
     public void handleInvestMoney() {
 
     }

@@ -2,7 +2,6 @@ package danylo.bank.app.customers;
 
 import danylo.bank.app.customers.interfaces.SilverCustomerInterface;
 
-import java.math.BigDecimal;
 
 /**
  * Is subclass for the Customer abstract class.
@@ -21,22 +20,27 @@ public class SilverCustomer extends Customer implements SilverCustomerInterface 
      * @param customerID     Integer representing the ID of the customer
      * @param salaryPerMonth BigDecimal representing the salary per month of the customer
      */
-    public SilverCustomer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
+    public SilverCustomer(String customerName, Integer customerID, Double salaryPerMonth) {
         super(customerName, customerID, salaryPerMonth);
     }
 
     @Override
-    public void topUpBalance(BigDecimal amount) {
+    public void topUpBalance(Double amount) {
 
     }
 
     @Override
-    public void withdrawMoney(BigDecimal amount) {
+    public void withdrawMoney(Double amount) {
 
     }
 
     @Override
-    public void takeCredit(BigDecimal amount) {
+    public void takeCredit(Double amount) {
+
+    }
+
+    @Override
+    public void payCredit(Double amount) {
 
     }
 }

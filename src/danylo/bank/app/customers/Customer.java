@@ -1,6 +1,5 @@
 package danylo.bank.app.customers;
 
-import java.math.BigDecimal;
 
 /**
  * This class responsible for keeping all data and behavior,
@@ -16,8 +15,8 @@ public abstract class Customer {
     private final String CUSTOMER_NAME;
     private final String CUSTOMER_PRIORITY;
     private final Integer CUSTOMER_ID;
-    private BigDecimal balance;
-    private BigDecimal salaryPerMonth;
+    private final Double salaryPerMonth;
+    private Double balance;
 
     /**
      * Constructor for Customer abstract class.
@@ -29,15 +28,15 @@ public abstract class Customer {
      * @param customerID Integer representing the ID of the customer
      * @param salaryPerMonth BigDecimal representing the salary per month of the customer
      */
-    public Customer(String customerName, Integer customerID, BigDecimal salaryPerMonth) {
+    public Customer(String customerName, Integer customerID, Double salaryPerMonth) {
         this.CUSTOMER_NAME = customerName;
         this.CUSTOMER_ID = customerID;
         this.salaryPerMonth = salaryPerMonth;
-        this.balance = BigDecimal.valueOf(0);
+        this.balance = 0.0;
 
-        if (salaryPerMonth.compareTo(BigDecimal.valueOf(10_000)) >= 0) {
+        if (salaryPerMonth >= 10_000.0) {
             CUSTOMER_PRIORITY = "Gold";
-        } else if (salaryPerMonth.compareTo(BigDecimal.valueOf(5000)) >= 0) {
+        } else if (salaryPerMonth >= 5000.0) {
             CUSTOMER_PRIORITY = "Silver";
         } else {
             CUSTOMER_PRIORITY = "Bronze";
@@ -76,8 +75,26 @@ public abstract class Customer {
      *
      * @return The value of balance
      */
-    public BigDecimal getBalance() {
+    public Double getBalance() {
         return balance;
+    }
+
+    /**
+     * Increases the value of balance by the value of amount.
+     *
+     * @param amount The value by which balance will be increased
+     */
+    public void increaseBalance(Double amount) {
+        this.balance += amount;
+    }
+
+    /**
+     * Reduces the value of balance by the value of amount.
+     *
+     * @param amount The value by which balance will be reduced
+     */
+    public void reduceBalance(Double amount) {
+        this.balance -= amount;
     }
 
     /**
@@ -85,7 +102,7 @@ public abstract class Customer {
      *
      * @return The value of salaryPerMonth
      */
-    public BigDecimal getSalaryPerMonth() {
+    public Double getSalaryPerMonth() {
         return salaryPerMonth;
     }
 }

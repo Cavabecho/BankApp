@@ -1,6 +1,5 @@
 package danylo.bank.app.customers.interfaces;
 
-import java.math.BigDecimal;
 
 /**
  * This interface responsible for keeping gold customer methods.
@@ -14,5 +13,5 @@ public interface GoldCustomerInterface extends SilverCustomerInterface{
      * @param amount The value by which bank account will be increased
      *               and customer's balance will be reduced
      */
-    void investMoney(BigDecimal amount);
+    void investMoney(Double amount);
 }

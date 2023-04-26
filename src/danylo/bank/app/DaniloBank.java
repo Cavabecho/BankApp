@@ -1,17 +1,15 @@
 package danylo.bank.app;
 
 import danylo.bank.app.bankers.Banker;
-import danylo.bank.app.customers.Customer;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 /**
  * This class responsible for stores all customers money and list of bankers.
  */
 public class DaniloBank {
-    private static BigDecimal totalBankAccount;
-    private static BigDecimal totalCustomersCredit;
+    private static Double totalBankAccount;
+    private static Double totalCustomersCredit;
     private ArrayList<Banker> bankers;
 
     /**
@@ -20,8 +18,8 @@ public class DaniloBank {
      * Also initializes an empty ArrayList for bankers.
      */
     public DaniloBank() {
-        totalBankAccount = BigDecimal.valueOf(0);
-        totalCustomersCredit = BigDecimal.valueOf(0);
+        totalBankAccount = 0.0;
+        totalCustomersCredit = 0.0;
         this.bankers = new ArrayList<>();
     }
 
@@ -30,8 +28,26 @@ public class DaniloBank {
      *
      * @return The value of totalBankAccount
      */
-    public static BigDecimal getTotalBankAccount() {
+    public static Double getTotalBankAccount() {
         return totalBankAccount;
+    }
+
+    /**
+     * Increases the value of totalBankAccount by the value of amount.
+     *
+     * @param amount The value by which totalBankAccount will be increased
+     */
+    public static void increaseTotalBankAccount(Double amount) {
+        DaniloBank.totalBankAccount += amount;
+    }
+
+    /**
+     * Reduces the value of totalBankAccount by the value of amount.
+     *
+     * @param amount The value by which totalBankAccount will be reduced
+     */
+    public static void reduceTotalBankAccount(Double amount) {
+        DaniloBank.totalBankAccount -= amount;
     }
 
     /**
@@ -39,8 +55,26 @@ public class DaniloBank {
      *
      * @return The value of totalCustomersCredit
      */
-    public static BigDecimal getTotalCustomersCredit() {
+    public static Double getTotalCustomersCredit() {
         return totalCustomersCredit;
+    }
+
+    /**
+     * Increases the value of totalCustomersCredit by the value of amount.
+     *
+     * @param amount The value by which totalCustomersCredit will be increased
+     */
+    public static void increaseTotalCustomersCredit(Double amount) {
+        DaniloBank.totalCustomersCredit += amount;
+    }
+
+    /**
+     * Reduces the value of totalCustomersCredit by the value of amount.
+     *
+     * @param amount The value by which totalCustomersCredit will be reduced
+     */
+    public static void reduceTotalCustomersCredit(Double amount) {
+        DaniloBank.totalCustomersCredit -= amount;
     }
 
     /**
