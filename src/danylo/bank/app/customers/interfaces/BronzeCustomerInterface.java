@@ -22,5 +22,5 @@ public interface BronzeCustomerInterface {
      *
      * @param amount The value by which balance and bank account will be reduced
      */
-    void withdrawMoney(Double amount);
+    void withdrawMoney(Double amount, JuniorBanker juniorBanker);
 }

@@ -31,7 +31,7 @@ public class BronzeCustomer extends Customer implements BronzeCustomerInterface 
     }
 
     @Override
-    public void withdrawMoney(Double amount) {
-
+    public void withdrawMoney(Double amount, JuniorBanker juniorBanker) {
+        juniorBanker.handleWithdrawMoney(amount, this);
     }
 }

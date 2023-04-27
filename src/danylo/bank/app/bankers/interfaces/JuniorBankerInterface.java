@@ -13,5 +13,5 @@ public interface JuniorBankerInterface {
     /**
      * Handler for the withdrawMoney method.
      */
-    void handleWithdrawMoney();
+    void handleWithdrawMoney(Double amount, BronzeCustomer bronzeCustomer);
 }

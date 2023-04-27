@@ -35,12 +35,22 @@ public class JuniorBanker extends Banker implements JuniorBankerInterface {
             DaniloBank.increaseTotalBankAccount(amount);
             bronzeCustomer.increaseBalance(amount);
         } else {
-            System.out.println("There is the problem: newBalance is negative");
+            System.out.println("There is the problem: newBalance is negative : " + bronzeCustomer.getBalance());
         }
     }
 
     @Override
-    public void handleWithdrawMoney() {
+    public void handleWithdrawMoney(Double amount, BronzeCustomer bronzeCustomer) {
+        if (amount < 0) {
+            System.out.println("Provided incorrect amount");
+            return;
+        }
 
+        if (bronzeCustomer.getBalance() > amount) {
+            DaniloBank.reduceTotalBankAccount(amount);
+            bronzeCustomer.reduceBalance(amount);
+        } else {
+            System.out.println("You have not enough money. Your balance is : " + bronzeCustomer.getBalance());
+        }
     }
 }
