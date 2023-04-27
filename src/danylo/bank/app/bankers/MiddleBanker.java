@@ -28,6 +28,7 @@ public class MiddleBanker extends JuniorBanker implements MiddleBankerInterface 
         double limitedAmountOfCredit = 10_000.0;
         if (limitedAmountOfCredit >= amount) {
             silverCustomer.increaseBalance(amount);
+            silverCustomer.increaseCredit(amount);
             DaniloBank.increaseTotalCustomersCredit(amount);
 
             System.out.println("U successfully take out a credit : " + amount);
@@ -37,7 +38,23 @@ public class MiddleBanker extends JuniorBanker implements MiddleBankerInterface 
     }
 
     @Override
-    public void handlePayCredit() {
+    public void handlePayCredit(Double amount, SilverCustomer silverCustomer) {
+        if (silverCustomer.getCredit() > amount) {
+            silverCustomer.reduceBalance(amount);
+            silverCustomer.reduceCredit(amount);
+            DaniloBank.reduceTotalCustomersCredit(amount);
 
+            System.out.println("U successfully payed a credit on the amount : " + amount +
+                    " Now ur credit is " + silverCustomer.getCredit());
+        } else {
+            double remainder = amount - silverCustomer.getCredit();
+            silverCustomer.reduceBalance(silverCustomer.getCredit());
+            silverCustomer.reduceCredit(silverCustomer.getCredit());
+            DaniloBank.reduceTotalCustomersCredit(silverCustomer.getCredit());
+            silverCustomer.increaseBalance(remainder);
+
+            System.out.println("U successfully repaid the credit. Remainder from ur amount was added to the balance." +
+                    "Remainder is : " + remainder + " Balance is : " + silverCustomer.getBalance());
+        }
     }
 }

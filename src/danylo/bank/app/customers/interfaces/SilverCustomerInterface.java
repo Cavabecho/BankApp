@@ -22,5 +22,5 @@ public interface SilverCustomerInterface extends BronzeCustomerInterface{
      *
      * @param amount The value by which balance and customers credit will be reduced
      */
-    void payCredit(Double amount);
+    void payCredit(Double amount, MiddleBanker middleBanker);
 }

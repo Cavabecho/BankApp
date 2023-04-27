@@ -31,7 +31,7 @@ public class SilverCustomer extends BronzeCustomer implements SilverCustomerInte
     }
 
     @Override
-    public void payCredit(Double amount) {
-
+    public void payCredit(Double amount, MiddleBanker middleBanker) {
+        middleBanker.handlePayCredit(amount, this);
     }
 }

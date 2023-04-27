@@ -15,5 +15,5 @@ public interface MiddleBankerInterface extends JuniorBankerInterface{
     /**
      * Handler for the payCredit method
      */
-    void handlePayCredit();
+    void handlePayCredit(Double amount, SilverCustomer silverCustomer);
 }
