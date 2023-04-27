@@ -1,7 +1,9 @@
 package danylo.bank.app;
 
 import danylo.bank.app.bankers.JuniorBanker;
+import danylo.bank.app.bankers.MiddleBanker;
 import danylo.bank.app.customers.BronzeCustomer;
+import danylo.bank.app.customers.SilverCustomer;
 
 /**
  * This file starts execution of the program.
@@ -30,5 +32,18 @@ public class Main {
 //        System.out.println(bz.getBalance());
 //        System.out.println(bz2.getBalance());
 //        System.out.println(DaniloBank.getTotalBankAccount());
+
+
+//        SilverCustomer sc = new SilverCustomer("Maksim", 3, 10000.0);
+//        MiddleBanker mb = new MiddleBanker("Danilo", "middle", 2);
+//        DaniloBank daniloBank = new DaniloBank();
+//
+//        System.out.println(sc.getBalance());
+//        System.out.println(DaniloBank.getTotalCustomersCredit());
+//
+//        sc.takeCredit(5007.9, mb);
+//
+//        System.out.println(sc.getBalance());
+//        System.out.println(DaniloBank.getTotalCustomersCredit());
     }
 }

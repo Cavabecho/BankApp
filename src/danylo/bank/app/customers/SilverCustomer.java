@@ -1,5 +1,6 @@
 package danylo.bank.app.customers;
 
+import danylo.bank.app.bankers.MiddleBanker;
 import danylo.bank.app.customers.interfaces.SilverCustomerInterface;
 
 
@@ -25,8 +26,8 @@ public class SilverCustomer extends BronzeCustomer implements SilverCustomerInte
     }
 
     @Override
-    public void takeCredit(Double amount) {
-
+    public void takeCredit(Double amount, MiddleBanker middleBanker) {
+        middleBanker.handleTakeCredit(amount, this);
     }
 
     @Override
