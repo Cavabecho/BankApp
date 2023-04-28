@@ -26,12 +26,18 @@ public class MiddleBanker extends JuniorBanker implements MiddleBankerInterface 
     @Override
     public void handleTakeCredit(Double amount, SilverCustomer silverCustomer) {
         double limitedAmountOfCredit = 10_000.0;
-        if (limitedAmountOfCredit >= amount) {
+
+        if (limitedAmountOfCredit >= amount && amount <= DaniloBank.getTotalBankAccount() / 4.0) {
+
             silverCustomer.increaseBalance(amount);
             silverCustomer.increaseCredit(amount);
             DaniloBank.increaseTotalCustomersCredit(amount);
+            DaniloBank.reduceTotalBankAccount(amount);
 
             System.out.println("U successfully take out a credit : " + amount);
+
+        } else if (DaniloBank.getTotalBankAccount() == 0.0) {
+            System.out.println("Right now bank do not have money to give u");
         } else {
             System.out.println("You can't take out a credit on an amount that is bigger than 10_000zł");
         }
@@ -40,18 +46,23 @@ public class MiddleBanker extends JuniorBanker implements MiddleBankerInterface 
     @Override
     public void handlePayCredit(Double amount, SilverCustomer silverCustomer) {
         if (silverCustomer.getCredit() > amount) {
+
             silverCustomer.reduceBalance(amount);
             silverCustomer.reduceCredit(amount);
             DaniloBank.reduceTotalCustomersCredit(amount);
+            DaniloBank.increaseTotalBankAccount(amount);
 
             System.out.println("U successfully payed a credit on the amount : " + amount +
                     " Now ur credit is " + silverCustomer.getCredit());
+
         } else {
             double remainder = amount - silverCustomer.getCredit();
+
             silverCustomer.reduceBalance(silverCustomer.getCredit());
             silverCustomer.reduceCredit(silverCustomer.getCredit());
-            DaniloBank.reduceTotalCustomersCredit(silverCustomer.getCredit());
             silverCustomer.increaseBalance(remainder);
+            DaniloBank.reduceTotalCustomersCredit(silverCustomer.getCredit());
+            DaniloBank.increaseTotalBankAccount(silverCustomer.getCredit());
 
             System.out.println("U successfully repaid the credit. Remainder from ur amount was added to the balance." +
                     "Remainder is : " + remainder + " Balance is : " + silverCustomer.getBalance());
