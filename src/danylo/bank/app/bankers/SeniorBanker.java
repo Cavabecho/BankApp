@@ -1,6 +1,8 @@
 package danylo.bank.app.bankers;
 
+import danylo.bank.app.DaniloBank;
 import danylo.bank.app.bankers.interfaces.SeniorBankerInterface;
+import danylo.bank.app.customers.GoldCustomer;
 
 /**
  * Is subclass for MiddleBanker class.
@@ -22,7 +24,16 @@ public class SeniorBanker extends MiddleBanker implements SeniorBankerInterface 
     }
 
     @Override
-    public void handleInvestMoney() {
+    public void handleInvestMoney(Double amount, GoldCustomer goldCustomer) {
+        if (amount < 0) {
+            return;
+        } else if (goldCustomer.getBalance() < amount) {
+            System.out.println("U should top up ur balance first");
+        } else {
+            DaniloBank.increaseTotalBankAccount(amount);
+            goldCustomer.reduceBalance(amount);
 
+            System.out.println("Thank u for supporting us! Donated amount is : " + amount);
+        }
     }
 }

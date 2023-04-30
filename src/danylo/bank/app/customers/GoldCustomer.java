@@ -1,5 +1,7 @@
 package danylo.bank.app.customers;
 
+import danylo.bank.app.DaniloBank;
+import danylo.bank.app.bankers.SeniorBanker;
 import danylo.bank.app.customers.interfaces.GoldCustomerInterface;
 
 
@@ -26,7 +28,7 @@ public class GoldCustomer extends SilverCustomer implements GoldCustomerInterfac
     }
 
     @Override
-    public void investMoney(Double amount) {
-
+    public void investMoney(Double amount, SeniorBanker seniorBanker) {
+        seniorBanker.handleInvestMoney(amount, this);
     }
 }

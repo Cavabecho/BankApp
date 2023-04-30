@@ -2,7 +2,9 @@ package danylo.bank.app;
 
 import danylo.bank.app.bankers.JuniorBanker;
 import danylo.bank.app.bankers.MiddleBanker;
+import danylo.bank.app.bankers.SeniorBanker;
 import danylo.bank.app.customers.BronzeCustomer;
+import danylo.bank.app.customers.GoldCustomer;
 import danylo.bank.app.customers.SilverCustomer;
 
 /**
@@ -45,5 +47,20 @@ public class Main {
 //
 //        System.out.println(sc.getBalance());
 //        System.out.println(DaniloBank.getTotalCustomersCredit());
+
+
+//        GoldCustomer gd = new GoldCustomer("Dsd", 3, 50000.0);
+//        SeniorBanker sb = new SeniorBanker("Danilo", "middle", 2);
+//        DaniloBank daniloBank = new DaniloBank();
+//
+//        System.out.println(DaniloBank.getTotalBankAccount());
+//        System.out.println(gd.getBalance());
+//
+//        gd.topUpBalance(4000.0, sb);
+//        gd.investMoney(4000.0, sb);
+//
+//        System.out.println(DaniloBank.getTotalBankAccount());
+//        System.out.println(gd.getBalance());
+
     }
 }
