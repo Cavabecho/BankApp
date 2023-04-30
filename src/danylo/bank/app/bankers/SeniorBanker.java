@@ -36,4 +36,21 @@ public class SeniorBanker extends MiddleBanker implements SeniorBankerInterface 
             System.out.println("Thank u for supporting us! Donated amount is : " + amount);
         }
     }
+
+    public void handleTakeCredit(Double amount, GoldCustomer goldCustomer) {
+        double limitedAmountOfCredit = DaniloBank.getTotalBankAccount() / 4.0;
+
+        if (limitedAmountOfCredit >= amount) {
+
+            goldCustomer.increaseBalance(amount);
+            goldCustomer.increaseCredit(amount);
+            DaniloBank.increaseTotalCustomersCredit(amount);
+            DaniloBank.reduceTotalBankAccount(amount);
+
+            System.out.println("U successfully take out a credit : " + amount);
+
+        } else if (DaniloBank.getTotalBankAccount() == 0.0) {
+            System.out.println("Right now bank do not have money to give u");
+        }
+    }
 }

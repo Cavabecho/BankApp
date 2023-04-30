@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/SeniorBanker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/SeniorBanker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/interfaces/SeniorBankerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/GoldCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/customers/interfaces/GoldCustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/customers/interfaces/GoldCustomerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
