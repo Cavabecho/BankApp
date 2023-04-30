@@ -64,8 +64,8 @@ public class MiddleBanker extends JuniorBanker implements MiddleBankerInterface 
             DaniloBank.reduceTotalCustomersCredit(silverCustomer.getCredit());
             DaniloBank.increaseTotalBankAccount(silverCustomer.getCredit());
 
-            System.out.println("U successfully repaid the credit. Remainder from ur amount was added to the balance." +
-                    "Remainder is : " + remainder + " Balance is : " + silverCustomer.getBalance());
+            System.out.println("U successfully repaid the credit. Remainder from ur amount was added to the balance. " +
+                    "Remainder is : " + remainder + ". Balance is : " + silverCustomer.getBalance());
         }
     }
 }
