@@ -1,6 +1,9 @@
 package danylo.bank.app.customers.interfaces;
 
 
+import danylo.bank.app.bankers.Banker;
+import danylo.bank.app.bankers.JuniorBanker;
+
 /**
  * This interface responsible for keeping bronze customer methods.
  */
@@ -11,7 +14,7 @@ public interface BronzeCustomerInterface {
      *
      * @param amount The value by which balance and bank account will be increased
      */
-    void topUpBalance(Double amount);
+    void topUpBalance(Double amount, JuniorBanker juniorBanker);
 
     /**
      * This method withdraws money from customer's balance and reduces the total bank account
@@ -19,5 +22,5 @@ public interface BronzeCustomerInterface {
      *
      * @param amount The value by which balance and bank account will be reduced
      */
-    void withdrawMoney(Double amount);
+    void withdrawMoney(Double amount, JuniorBanker juniorBanker);
 }

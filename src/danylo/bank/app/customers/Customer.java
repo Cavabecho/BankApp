@@ -17,6 +17,7 @@ public abstract class Customer {
     private final Integer CUSTOMER_ID;
     private final Double salaryPerMonth;
     private Double balance;
+    private Double credit;
 
     /**
      * Constructor for Customer abstract class.
@@ -33,6 +34,7 @@ public abstract class Customer {
         this.CUSTOMER_ID = customerID;
         this.salaryPerMonth = salaryPerMonth;
         this.balance = 0.0;
+        this.credit = 0.0;
 
         if (salaryPerMonth >= 10_000.0) {
             CUSTOMER_PRIORITY = "Gold";
@@ -104,5 +106,32 @@ public abstract class Customer {
      */
     public Double getSalaryPerMonth() {
         return salaryPerMonth;
+    }
+
+    /**
+     * Returns the value of credit.
+     *
+     * @return The value of credit
+     */
+    public Double getCredit() {
+        return credit;
+    }
+
+    /**
+     * Increases the value of credit by the value of amount.
+     *
+     * @param amount The value by which credit will be increased
+     */
+    public void increaseCredit(Double amount) {
+        this.credit += amount;
+    }
+
+    /**
+     * Reduces the value of credit by the value of amount.
+     *
+     * @param amount The value by which credit will be reduced
+     */
+    public void reduceCredit(Double amount) {
+        this.credit -= amount;
     }
 }

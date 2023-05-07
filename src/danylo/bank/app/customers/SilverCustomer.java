@@ -1,17 +1,18 @@
 package danylo.bank.app.customers;
 
+import danylo.bank.app.bankers.MiddleBanker;
 import danylo.bank.app.customers.interfaces.SilverCustomerInterface;
 
 
 /**
- * Is subclass for the Customer abstract class.
+ * Is subclass for the BronzeCustomer class.
  * Implements SilverCustomerInterface interface.
  * This class stores implementations of methods,
  * that going to make money requests to the middle banker class.
  * Customers of this class can:
  * top up balance / withdraw money / take out credit for a limited amount such as 10_000 zł.
  */
-public class SilverCustomer extends Customer implements SilverCustomerInterface {
+public class SilverCustomer extends BronzeCustomer implements SilverCustomerInterface {
     /**
      * Constructor for SilverCustomer class.
      * Initializes the SilverCustomer object with the given customerName, customerID, salaryPerMonth.
@@ -25,22 +26,12 @@ public class SilverCustomer extends Customer implements SilverCustomerInterface 
     }
 
     @Override
-    public void topUpBalance(Double amount) {
-
+    public void takeCredit(Double amount, MiddleBanker middleBanker) {
+        middleBanker.handleTakeCredit(amount, this);
     }
 
     @Override
-    public void withdrawMoney(Double amount) {
-
-    }
-
-    @Override
-    public void takeCredit(Double amount) {
-
-    }
-
-    @Override
-    public void payCredit(Double amount) {
-
+    public void payCredit(Double amount, MiddleBanker middleBanker) {
+        middleBanker.handlePayCredit(amount, this);
     }
 }
