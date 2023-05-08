@@ -51,6 +51,9 @@ public class SeniorBanker extends MiddleBanker implements SeniorBankerInterface 
 
         } else if (DaniloBank.getTotalBankAccount() == 0.0) {
             System.out.println("Right now bank do not have money to give u");
+        } else {
+            System.out.println("U can not take out a credit on amount that is bigger than " + limitedAmountOfCredit +
+                    ", 'cause Bank do not have enough money to give u right now ");
         }
     }
 }

@@ -56,11 +56,16 @@ public class Main {
 //        System.out.println(DaniloBank.getTotalBankAccount());
 //        System.out.println(gd.getBalance());
 //
-//        gd.topUpBalance(4000.0, sb);
-//        gd.investMoney(4000.0, sb);
+//        gd.topUpBalance(6000.0, sb);
+//
 //
 //        System.out.println(DaniloBank.getTotalBankAccount());
 //        System.out.println(gd.getBalance());
-
+//
+//        gd.takeCredit(5000.0, sb);
+//
+//        System.out.println(DaniloBank.getTotalBankAccount());
+//        System.out.println(DaniloBank.getTotalCustomersCredit());
+//        System.out.println(gd.getBalance());
     }
 }

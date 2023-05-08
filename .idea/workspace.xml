@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/bankers/SeniorBanker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/bankers/SeniorBanker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;implementationOfMethods&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/Java/BankApp/src/Main.java&quot;
   }
 }</component>
