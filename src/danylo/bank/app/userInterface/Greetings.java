@@ -11,9 +11,9 @@ import java.util.Scanner;
  */
 public class Greetings {
     private static final Scanner scanner = new Scanner(System.in);
-    static BronzeCustomer bronzeCustomer;
-    static SilverCustomer silverCustomer;
-    static GoldCustomer goldCustomer;
+    public static BronzeCustomer bronzeCustomer;
+    public static SilverCustomer silverCustomer;
+    public static GoldCustomer goldCustomer;
 
     public static void displayGreetings() {
         System.out.println("Hello there! Let's get started internship with Danilo Bank.");
