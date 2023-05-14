@@ -6,7 +6,7 @@ import danylo.bank.app.customers.SilverCustomer;
  * This interface is responsible for keeping middle banker methods.
  * Extends junior banker functional.
  */
-public interface MiddleBankerInterface extends JuniorBankerInterface{
+public interface MiddleBankerInterface extends JuniorBankerInterface {
     /**
      * Handler for the takeCredit method.
      */

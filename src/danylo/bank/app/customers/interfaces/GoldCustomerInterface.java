@@ -7,7 +7,7 @@ import danylo.bank.app.bankers.SeniorBanker;
  * This interface responsible for keeping gold customer methods.
  * Extends silver customer functional.
  */
-public interface GoldCustomerInterface extends SilverCustomerInterface{
+public interface GoldCustomerInterface extends SilverCustomerInterface {
     /**
      * This method increases the total bank account and reduced customer's balance
      * by the value of amount.

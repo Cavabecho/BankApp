@@ -1,7 +1,6 @@
 package danylo.bank.app.customers.interfaces;
 
 
-import danylo.bank.app.bankers.Banker;
 import danylo.bank.app.bankers.JuniorBanker;
 
 /**

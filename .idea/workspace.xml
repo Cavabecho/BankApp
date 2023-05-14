@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/danylo/bank/app/userInterface/actions/Gold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danylo/bank/app/userInterface/actions/Bronze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/danylo/bank/app/userInterface/actions/Bronze.java" afterDir="false" />
-    </list>
+    <list default="true" id="a31cceb9-cfb0-4e8e-a950-2d0abdf7958b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

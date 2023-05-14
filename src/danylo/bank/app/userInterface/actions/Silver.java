@@ -1,9 +1,7 @@
 package danylo.bank.app.userInterface.actions;
 
 import danylo.bank.app.DaniloBank;
-import danylo.bank.app.bankers.JuniorBanker;
 import danylo.bank.app.bankers.MiddleBanker;
-import danylo.bank.app.customers.SilverCustomer;
 import danylo.bank.app.userInterface.Greetings;
 
 import java.util.Scanner;

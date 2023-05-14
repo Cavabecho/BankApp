@@ -1,7 +1,6 @@
 package danylo.bank.app.userInterface.actions;
 
 import danylo.bank.app.DaniloBank;
-import danylo.bank.app.bankers.MiddleBanker;
 import danylo.bank.app.bankers.SeniorBanker;
 import danylo.bank.app.userInterface.Greetings;
 
