@@ -1,11 +1,12 @@
-package danylo.bank.app.userInterface;
+package danylo.bank.app.userInterface.actions;
 
 import danylo.bank.app.DaniloBank;
 import danylo.bank.app.bankers.JuniorBanker;
+import danylo.bank.app.userInterface.Greetings;
 
 import java.util.Scanner;
 
-public class BronzeActions {
+public class Bronze {
     private static final Scanner scanner = new Scanner(System.in);
     public static DaniloBank daniloBank = new DaniloBank();
     public static JuniorBanker jb = new JuniorBanker("Employee1", "Junior", 1);

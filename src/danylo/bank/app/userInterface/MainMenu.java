@@ -1,8 +1,7 @@
 package danylo.bank.app.userInterface;
 
-import danylo.bank.app.customers.Customer;
-import danylo.bank.app.customers.GoldCustomer;
-import danylo.bank.app.userInterface.Greetings;
+import danylo.bank.app.userInterface.actions.Bronze;
+import danylo.bank.app.userInterface.actions.Silver;
 
 import java.util.Objects;
 import java.util.Scanner;
@@ -17,20 +16,24 @@ public class MainMenu {
             System.out.println("2. Top Up balance");
             System.out.println("3. Withdraw money");
 
-            BronzeActions.userChose();
+            Bronze.userChose();
         } else if (Greetings.silverCustomer != null
                 && Objects.equals(Greetings.silverCustomer.getCUSTOMER_PRIORITY(), "Silver")) {
             System.out.println("1. Info about my account");
             System.out.println("2. Top Up balance");
             System.out.println("3. Withdraw money");
             System.out.println("4. Take out credit");
+            System.out.println("5. Pay credit");
+
+            Silver.userChose();
         } else if (Greetings.goldCustomer != null
                 && Objects.equals(Greetings.goldCustomer.getCUSTOMER_PRIORITY(), "Gold")) {
             System.out.println("1. Info about my account");
             System.out.println("2. Top Up balance");
             System.out.println("3. Withdraw money");
             System.out.println("4. Take out credit");
-            System.out.println("5. Invest money to the Bank");
+            System.out.println("5. Pay credit");
+            System.out.println("6. Invest money to the Bank");
         } else {
             System.out.println("No customer found");
         }
