@@ -1,6 +1,7 @@
 package danylo.bank.app.userInterface;
 
 import danylo.bank.app.userInterface.actions.Bronze;
+import danylo.bank.app.userInterface.actions.Gold;
 import danylo.bank.app.userInterface.actions.Silver;
 
 import java.util.Objects;
@@ -34,6 +35,8 @@ public class MainMenu {
             System.out.println("4. Take out credit");
             System.out.println("5. Pay credit");
             System.out.println("6. Invest money to the Bank");
+
+            Gold.userChose();
         } else {
             System.out.println("No customer found");
         }

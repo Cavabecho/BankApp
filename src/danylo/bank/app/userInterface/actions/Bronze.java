@@ -9,7 +9,8 @@ import java.util.Scanner;
 public class Bronze {
     private static final Scanner scanner = new Scanner(System.in);
     public static DaniloBank daniloBank = new DaniloBank();
-    public static JuniorBanker jb = new JuniorBanker("Employee1", "Junior", 1);
+    public static JuniorBanker jb =
+            new JuniorBanker("Employee1", "Junior", 1);
 
     public static void userChose() {
         int userChose = scanner.nextInt();

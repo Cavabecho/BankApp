@@ -10,6 +10,8 @@ import danylo.bank.app.userInterface.MainMenu;
 public class Main {
     public static void main(String[] args) {
         Greetings.displayGreetings();
-        MainMenu.displayMenu();
+        while (true) {
+            MainMenu.displayMenu();
+        }
     }
 }
