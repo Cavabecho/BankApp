@@ -1,7 +1,5 @@
 package danylo.bank.app.customers;
 
-import danylo.bank.app.DaniloBank;
-import danylo.bank.app.bankers.MiddleBanker;
 import danylo.bank.app.bankers.SeniorBanker;
 import danylo.bank.app.customers.interfaces.GoldCustomerInterface;
 

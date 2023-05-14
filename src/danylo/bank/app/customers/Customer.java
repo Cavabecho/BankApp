@@ -25,8 +25,8 @@ public abstract class Customer {
      * Also initializes the balance to zero.
      * Calculate CUSTOMER_PRIORITY based on salaryPerMonth.
      *
-     * @param customerName String representing the name of the customer
-     * @param customerID Integer representing the ID of the customer
+     * @param customerName   String representing the name of the customer
+     * @param customerID     Integer representing the ID of the customer
      * @param salaryPerMonth BigDecimal representing the salary per month of the customer
      */
     public Customer(String customerName, Integer customerID, Double salaryPerMonth) {

@@ -10,6 +10,7 @@ public interface JuniorBankerInterface {
      * Handler for the topUpBalance method.
      */
     void handleTopUpBalance(Double amount, BronzeCustomer bronzeCustomer);
+
     /**
      * Handler for the withdrawMoney method.
      */
